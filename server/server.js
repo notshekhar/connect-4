@@ -1,6 +1,6 @@
-const app = require("./serverJS/app")
+const app = require("./JS/app")
 const socketio = require("socket.io")
-const socketHandler = require("./serverJS/socketHandler.js")
+const socketHandler = require("./JS/socketHandler.js")
 
 require("dotenv").config()
 

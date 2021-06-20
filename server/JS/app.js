@@ -4,7 +4,7 @@ const cors = require("cors")
 const logger = require("morgan")
 
 const { errorHandler } = require("./error")
-const router = require("./routers/router1")
+const router = require("../routers/router")
 
 
 const app = express()
