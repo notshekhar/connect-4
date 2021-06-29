@@ -1,13 +1,11 @@
 import Header from "../components/Header"
 import CreateBody from "../components/CreateBody"
 
-export default function Create() {
+export default function Create({ history }) {
     return (
         <div>
-            <Header></Header>
-            <CreateBody>
-
-            </CreateBody>
+            <Header history={history}></Header>
+            <CreateBody></CreateBody>
         </div>
     )
 }

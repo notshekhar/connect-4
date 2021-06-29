@@ -1,8 +1,90 @@
-.header{
+body {
+    background-color: rgb(240, 240, 240);
+}
+.header {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 55px;
-    background-color: red;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.auth {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+.auth > * {
+    width: 100px;
+    height: 35px;
+    border-radius: 11px;
+    border: none;
+    color: white;
+    background-color: white;
+}
+.login {
+    background-color: tomato;
+}
+.signup {
+    color: tomato;
+}
+.body {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    height: calc(100% - 55px);
+    display: flex;
+}
+.new-game-wrap {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-game-wrap > .wrap {
+    height: 250px;
+    width: 500px;
+    border-radius: 21px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.new-game-wrap > .wrap > .icon {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-left: 25px;
+    border-radius: 21px;
+}
+.new-game-wrap > .wrap > .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.new-game-wrap > .wrap > .actions > * {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    background-color: tomato;
+    transition: all 400ms;
+}
+.new-game-wrap > .wrap > .actions > *:active {
+    color: tomato;
+    background-color: white;
+    transform: scale(0.95);
+}
+.new-game-wrap > .wrap > .actions > *:disabled {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.95);
+}
+.rank {
+    width: 30%;
+    margin-left: auto;
 }
