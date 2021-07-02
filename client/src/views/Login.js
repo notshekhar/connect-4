@@ -1,4 +1,7 @@
-
 export default function Login() {
-    return <div>Main</div>
+    return (
+        <div class="body">
+            <div className="login_wrap"></div>
+        </div>
+    )
 }

@@ -7,10 +7,10 @@ function HeaderAuthElement({ history }) {
     }
     return (
         <div className="auth">
-            <button className="login" onClick={openLoginPage}>
+            <button className="login btn" onClick={openLoginPage}>
                 LogIn
             </button>
-            <button className="signup">SignUp</button>
+            <button className="signup btn">SignUp</button>
         </div>
     )
 }

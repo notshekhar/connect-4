@@ -1,12 +1,13 @@
-
 function NewGame() {
     return (
         <div className="new-game-wrap">
             <div className="wrap">
                 <div className="icon"></div>
                 <div className="actions">
-                    <button disabled>Find Random Oponant</button>
-                    <button>Play with friend</button>
+                    <button className="disabled-btn" disabled>
+                        Find Random Oponant
+                    </button>
+                    <button className="btn">Play with friend</button>
                 </div>
             </div>
         </div>
