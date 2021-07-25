@@ -1,4 +1,14 @@
+import auth from "../js/auth"
+import { useHistory } from "react-router-dom"
+
 function NewGame() {
+    const history = useHistory()
+
+    function createRoom() {
+        if (!auth.auth) history.push("/login?auth=login")
+        
+        //else fetch a room from server and redirect to room page
+    }
     return (
         <div className="new-game-wrap">
             <div className="wrap">
@@ -7,7 +17,9 @@ function NewGame() {
                     <button className="disabled-btn" disabled>
                         Find Random Oponant
                     </button>
-                    <button className="btn">Play with friend</button>
+                    <button className="btn" onClick={createRoom}>
+                        Play with friend
+                    </button>
                 </div>
             </div>
         </div>

@@ -6,8 +6,6 @@ import NotFound from "./views/NotFound"
 import "./css/index.css"
 import Login from "./views/Login"
 
-
-
 function Routers() {
     return (
         <Switch>
